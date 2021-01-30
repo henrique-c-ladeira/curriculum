@@ -3,20 +3,22 @@ import { NavBar, NavItem, ProfilePic } from './Header.styled';
 import profilePic from '../../assets/imgs/profile.jpg';
 import { AboutIcon, GraduationHatIcon, ResearchIcon } from '../icons';
 
-export const Header = () => (
+const Header = () => (
   <NavBar>
     <ProfilePic src={profilePic} alt="" />
-    <NavItem onClick={() => {}}>
+    <NavItem exact to="/" activeClassName="activeNav">
       <AboutIcon noStyle />
       About
     </NavItem>
-    <NavItem onClick={() => {}}>
+    <NavItem exact to="/education" activeClassName="activeNav">
       <GraduationHatIcon noStyle />
       Education
     </NavItem>
-    <NavItem onClick={() => {}}>
+    <NavItem exact to="/experience" activeClassName="activeNav">
       <ResearchIcon noStyle />
       Experience
     </NavItem>
   </NavBar>
 );
+
+export default Header;

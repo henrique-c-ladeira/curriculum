@@ -1,15 +1,20 @@
 import React from 'react';
 
+import { Switch, Route } from 'react-router-dom';
+
 import { GlobalStyles } from './styles';
 import { Header } from './components';
 
-import { Home } from './views';
+import { Home, Education } from './views';
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/education" component={Education} />
+      </Switch>
       <GlobalStyles />
     </>
   );

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+
 import { colors, metrics, fonts } from '../../styles';
 
 export const NavBar = styled.div`
@@ -15,9 +17,15 @@ export const NavBar = styled.div`
   opacity: 0.95;
 
   box-shadow: 1px 1px 1px ${colors.primaryDark};
+
+  .activeNav {
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px ${colors.primaryDark};
+    color: ${colors.primary};
+  }
 `;
 
-export const NavItem = styled.div`
+export const NavItem = styled(NavLink)`
   margin: ${metrics.baseMargin};
   padding: ${metrics.smallPadding} ${metrics.basePadding};
   border-radius: ${metrics.tinyBorderRadius};
