@@ -6,7 +6,7 @@ export const metrics = {
   smallMargin: '10px',
   baseSideMargin: '15px;',
   baseMargin: '20px',
-  largerMargin: '25px',
+  largerMargin: '40px',
   largestMargin: '5em',
 
   tinyPadding: '5px',

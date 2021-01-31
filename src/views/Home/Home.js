@@ -4,41 +4,7 @@ import { Container, Wrapper, Content } from './Home.styled';
 
 import { GitHubIcon, LinkedinIcon } from '../../components/icons';
 
-// const INITIAL_STATE = {
-//   about: false,
-//   education: false,
-//   experience: false,
-// };
-
 export const Home = () => (
-  // const [modal, setModal] = useState(INITIAL_STATE);
-
-  // const handleClick = (modalNum) => {
-  //   switch (modalNum) {
-  //     case 0:
-  //       setModal({
-  //         about: !modal.about,
-  //         education: false,
-  //         experience: false,
-  //       });
-  //       break;
-  //     case 1:
-  //       setModal({
-  //         about: false,
-  //         education: !modal.education,
-  //         experience: false,
-  //       });
-  //       break;
-  //     case 2:
-  //       setModal({
-  //         about: false,
-  //         education: false,
-  //         experience: !modal.experience,
-  //       });
-  //       break;
-  //     default:
-  //   }
-  // };
   <Container>
     <Wrapper>
       <h1>Henrique Curzio Ladeira</h1>
@@ -76,8 +42,12 @@ export const Home = () => (
           teaching.
         </p>
       </Content>
-      <GitHubIcon />
-      <LinkedinIcon />
+      <a href="https://github.com/henrique-c-ladeira">
+        <GitHubIcon />
+      </a>
+      <a href="https://www.linkedin.com/in/henrique-c-ladeira">
+        <LinkedinIcon />
+      </a>
     </Wrapper>
   </Container>
 );

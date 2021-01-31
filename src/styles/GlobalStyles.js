@@ -68,11 +68,13 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
   a{
+    margin: none;
+    color: inherit;
     &:visited {
       color: inherit;
     }
+
   }
 
   *, input, button {
