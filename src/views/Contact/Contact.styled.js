@@ -24,6 +24,8 @@ export const Wrapper = styled.div`
 
   position: relative;
 
+  width: 100%;
+
   max-width: 700px;
 
   color: ${colors.primaryText};
@@ -60,7 +62,15 @@ export const Content = styled.div`
 
   margin-bottom: ${metrics.largerMargin};
 
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   img {
+    border-radius: 30%;
+
     position: absolute;
 
     width: 150px;

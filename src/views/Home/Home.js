@@ -12,7 +12,7 @@ export const Home = () => (
         <p>
           I am a Software Engineer working in the computer software industry.
           Skilled in programming languages which mainly includes Javascript
-          (React and Node), Python, PHP and C for embedded systems. Strong
+          (React and Node), Python, PHP and C for embedded systems. Zealous
           engineering professional with a Bachelor&apos;s Degree in Control and
           Automation Engineering.
         </p>
@@ -38,8 +38,8 @@ export const Home = () => (
         <p>
           I currently work with React, React Native and Node.js development for
           mobile and web. I am a self-taught enthusiastic learner and I bear in
-          mind that one of the best way to consolidate your knowledge is by
-          teaching.
+          mind that one of the best ways to consolidate your knowledge is by
+          teaching and one of the effortless ways to learn is through humility.
         </p>
       </Content>
       <a href="https://github.com/henrique-c-ladeira">

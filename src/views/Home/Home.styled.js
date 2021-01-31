@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { colors, metrics } from '../../styles';
+import { colors, fonts, metrics } from '../../styles';
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   align-items: baseline;
 
-  margin: ${metrics.largestMargin};
+  margin-top: ${metrics.largerMargin};
   padding: ${metrics.basePadding};
   border-radius: ${metrics.baseBorderRadius};
 
@@ -54,6 +54,7 @@ export const Content = styled.div`
   margin-bottom: ${metrics.baseMargin};
 
   p {
+    font-size: ${fonts.medium};
     margin-bottom: ${metrics.paragraphMargin};
 
     text-align: justify;

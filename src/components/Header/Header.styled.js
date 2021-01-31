@@ -4,10 +4,12 @@ import { NavLink } from 'react-router-dom';
 import { colors, metrics, fonts } from '../../styles';
 
 export const NavBar = styled.div`
-  height: 150px;
   width: 100%;
+
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+
   align-items: flex-end;
   justify-content: space-around;
   gap: ${metrics.baseGap};
@@ -18,10 +20,9 @@ export const NavBar = styled.div`
 
   box-shadow: 1px 1px 1px ${colors.primaryDark};
 
-  .activeNav {
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px ${colors.primaryDark};
-    color: ${colors.primary};
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -43,6 +44,12 @@ export const NavItem = styled(NavLink)`
 
   transition: 0.3s ease-out;
 
+  &.activeNav {
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px ${colors.primaryDark};
+    color: ${colors.primary};
+  }
+
   &:hover {
     transform: scale(1.2);
   }
@@ -50,6 +57,10 @@ export const NavItem = styled(NavLink)`
   &:active {
     transform: scale(0.9);
     background-color: ${colors.primaryDark};
+  }
+
+  @media (max-width: 700px) {
+    display: ${(props) => (props.active ? 'flex' : 'none')};
   }
 `;
 

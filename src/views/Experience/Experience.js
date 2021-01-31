@@ -30,7 +30,7 @@ export const Experience = () => (
         <h1>Software Developer</h1>
         <p>
           Maintenance and development of web and mobile apps. Programming mainly
-          in React, Node and PHP
+          in React, Node and PHP.
         </p>
         <desc>2020 - present</desc>
       </Content>
@@ -39,7 +39,8 @@ export const Experience = () => (
         <p>CEFET-MG</p>
         <h1>Course Assistant</h1>
         <p>
-          Assistant in lectures and teaching Data Structure and C Programming.
+          Assistant in lectures and teaching in Data Structure and C
+          Programming.
         </p>
         <desc>2016</desc>
       </Content>

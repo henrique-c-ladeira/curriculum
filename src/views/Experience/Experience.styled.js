@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin: ${metrics.largestMargin};
+  margin-top: ${metrics.largerMargin};
   padding: ${metrics.basePadding};
   border-radius: ${metrics.baseBorderRadius};
 

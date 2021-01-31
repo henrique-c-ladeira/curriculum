@@ -3,7 +3,7 @@ import { GoBeaker, GoMarkGithub } from 'react-icons/go';
 import { GrLinkedin } from 'react-icons/gr';
 import { IoIosContact } from 'react-icons/io';
 import { SiBlender } from 'react-icons/si';
-import { FaReadme } from 'react-icons/fa';
+import { FaReadme, FaCertificate } from 'react-icons/fa';
 import {
   DiPhotoshop,
   DiReact,
@@ -13,6 +13,7 @@ import {
   DiPython,
   DiLinux,
 } from 'react-icons/di';
+import { BiMailSend } from 'react-icons/bi';
 
 import styled, { css } from 'styled-components';
 
@@ -34,6 +35,14 @@ const baseIconStyle = css`
 `;
 
 export const PhotoshopIcon = styled(DiPhotoshop)`
+  ${(props) => (props.noStyle ? null : baseIconStyle)}
+`;
+
+export const MailIcon = styled(BiMailSend)`
+  ${(props) => (props.noStyle ? null : baseIconStyle)}
+`;
+
+export const CertificateIcon = styled(FaCertificate)`
   ${(props) => (props.noStyle ? null : baseIconStyle)}
 `;
 
