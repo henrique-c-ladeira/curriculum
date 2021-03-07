@@ -3,6 +3,7 @@ import { CertificateIcon } from '../../components/icons';
 import { Container, Content, Wrapper } from './Certificates.styled';
 
 import ieltsLogo from '../../assets/imgs/ielts.png';
+import pirpleLogo from '../../assets/imgs/pirple.png';
 
 import senaiLogo from '../../assets/imgs/senai.png';
 import leanLogo from '../../assets/imgs/lean.png';
@@ -15,10 +16,17 @@ export const Certificates = () => (
         <CertificateIcon noStyle />
       </h1>
       <Content>
+        <img alt="" src={pirpleLogo} />
+        <a href="https://www.pirple.com/certificates/hgayskcloy">Certificate</a>
+        <h1>The Node.js Master Class</h1>
+        <p>Pirple</p>
+        <desc>2021</desc>
+      </Content>
+      <Content>
         <img alt="" src={ieltsLogo} />
         <p>IELTS General Training</p>
         <h1>English Proficiency Test</h1>
-        <p>Overall Band Score: 8.0, CEFR Level: C1</p>
+        <p>Overall Band Score: 8.0/9.0, CEFR Level: C1</p>
         <desc>2020</desc>
       </Content>
       <Content>
